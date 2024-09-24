@@ -21,6 +21,7 @@
                     "targetPort": "1_in"
                 }
             ],
+            "hash": "ddfd83b04ce7188f188c4ff52370d9fd86e62884",
             "nodes": {
                 "0": {
                     "data": {
@@ -35,8 +36,8 @@
                     "id": "0",
                     "type": "start",
                     "warnings": {},
-                    "x": 20,
-                    "y": 0
+                    "x": 19.999999999999986,
+                    "y": -6.394884621840902e-14
                 },
                 "1": {
                     "data": {
@@ -51,8 +52,8 @@
                     "id": "1",
                     "type": "end",
                     "warnings": {},
-                    "x": 20,
-                    "y": 296
+                    "x": 19.999999999999986,
+                    "y": 295.9999999999999
                 },
                 "2": {
                     "data": {
@@ -70,8 +71,17 @@
                         "functionId": 1,
                         "functionName": "whois_ip_1",
                         "id": "2",
+                        "loop": {
+                            "enabled": false,
+                            "exitAfterUnit": "m",
+                            "exitAfterValue": 10,
+                            "exitConditionEnabled": false,
+                            "exitLoopAfter": 2,
+                            "pauseUnit": "m",
+                            "pauseValue": 2
+                        },
                         "parameters": {
-                            "ip": "1.1.1.1"
+                            "ip": "1.1.1.2"
                         },
                         "requiredParameters": [
                             {
@@ -95,10 +105,10 @@
         "output_spec": null,
         "playbook_type": "automation",
         "python_version": "3",
-        "schema": "5.0.10",
-        "version": "6.0.1.123902"
+        "schema": "5.0.11",
+        "version": "6.2.0.355"
     },
-    "create_time": "2024-01-09T02:00:11.833660+00:00",
+    "create_time": "2024-09-24T05:01:28.138674+00:00",
     "draft_mode": false,
     "labels": [
         "*"

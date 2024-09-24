@@ -18,7 +18,7 @@ def on_start(container):
     return
 
 @phantom.playbook_block()
-def whois_ip_1(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None, custom_function=None, **kwargs):
+def whois_ip_1(action=None, success=None, container=None, results=None, handle=None, filtered_artifacts=None, filtered_results=None, custom_function=None, loop_state_json=None, **kwargs):
     phantom.debug("whois_ip_1() called")
 
     # phantom.debug('Action: {0} {1}'.format(action['name'], ('SUCCEEDED' if success else 'FAILED')))
@@ -26,7 +26,7 @@ def whois_ip_1(action=None, success=None, container=None, results=None, handle=N
     parameters = []
 
     parameters.append({
-        "ip": "1.1.1.1",
+        "ip": "1.1.1.2",
     })
 
     ################################################################################
