@@ -21,7 +21,7 @@
                     "targetPort": "1_in"
                 }
             ],
-            "hash": "50147eb7ab32e51b3da328b6261c31155b928310",
+            "hash": "ddfd83b04ce7188f188c4ff52370d9fd86e62884",
             "nodes": {
                 "0": {
                     "data": {
@@ -37,7 +37,7 @@
                     "type": "start",
                     "warnings": {},
                     "x": 1000,
-                    "y": 419.9999999999999
+                    "y": 419.9999999999998
                 },
                 "1": {
                     "data": {
@@ -71,8 +71,17 @@
                         "functionId": 1,
                         "functionName": "whois_ip_1",
                         "id": "2",
+                        "loop": {
+                            "enabled": false,
+                            "exitAfterUnit": "m",
+                            "exitAfterValue": 10,
+                            "exitConditionEnabled": false,
+                            "exitLoopAfter": 2,
+                            "pauseUnit": "m",
+                            "pauseValue": 2
+                        },
                         "parameters": {
-                            "ip": "1.1.1.1"
+                            "ip": "1.1.1.2"
                         },
                         "requiredParameters": [
                             {
@@ -96,10 +105,10 @@
         "output_spec": null,
         "playbook_type": "automation",
         "python_version": "3",
-        "schema": "5.0.10",
-        "version": "6.0.1.123902"
+        "schema": "5.0.11",
+        "version": "6.2.0.355"
     },
-    "create_time": "2023-08-25T06:29:11.484943+00:00",
+    "create_time": "2024-09-24T05:07:36.434714+00:00",
     "draft_mode": false,
     "labels": [
         "*"
